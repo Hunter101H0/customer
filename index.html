@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> M2 </title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- start header -->
+    <header>
+        <div class="container ">
+            <a href="#" class="logo"> M2 </a>
+            <ul class="main-nav">
+                <li>
+                    <a href="#Home"> Home </a>
+                </li>
+                <li>
+                    <a href="#About"> About </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://discord.gg/qWZqYq9Kcn"> Discord </a>
+                </li>
+                <li>
+                    <a href="#"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- End header -->
+
+
+
+    <!-- start Landing -->
+    <div id="Home" class="landing">
+        <div class="container">
+            <div class="text">
+                <div class="parent bg-info p-5">
+                    <input type="text" id="input" class="d-block" style="opacity:0">
+                    <h1 id="h" class="  p-5 d-2 text-center text-white fw-bold" style="word-spacing: 4px;"></h1>
+                    <button id="btn" class="btn btn-danger text-center d-block m-auto btn-lg">Genrate</button>
+                    <button onclick="copy()" id="btn1"
+                        class="btn1 btn-danger text-center d-block m-auto btn-lg">Copy</button>
+                    <p id="cope text"></p>
+
+                </div>
+                <div hidden id="alertcopy" class="alert">
+                    <span class="closebtn">&times;</span>
+                    copyed
+                </div>
+            </div>
+
+
+            <div class="imgs">
+                <img src="/img/undraw_random_thoughts_re_cob6.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End Landing -->
+
+
+    <!--   Start About -->
+    <div id="About" class="about">
+        <div class="container">
+            <h2 class="special-heading">About</h2>
+            <p class="special"> About this site </p>
+            <div class="about-content">
+                <div class="image">
+                    <img src="/img/Untitled97.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p> M2 </p>
+                    <hr>
+                    <p>This site is dedicated to Free Fire
+                        fans who are constantly striving
+                        to get some changes in the game
+                        in order to become the best
+                        for them. Therefore, we decided
+                        to create this site for you to get
+                        the codes for one of the most
+                        prominent Free Fire bots <span> "Hex Bot" </span> <span class="The"> The percentage of code
+                            usage is 21%. </span></p>
+                    <div class="but2">
+                        <a class="two" href="#"> Install the bot <i class="fas fa-download"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End About -->
+
+
+
+    <!-- Start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4> Communication </h4>
+                <a target="_blank" href="#"> <i class="fab fa-instagram"></i> </a>
+                <a target="_blank" href="https://discord.gg/qWZqYq9Kcn"> <i class="fab fa-discord"></i> </a>
+            </div>
+            <h6 class="copyrighet" dir="rtl">Ⓒ حقوق ᯓ Hunter/࿐𖤐#6725</h6>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+
+    <script src="/index.js"></script>
+    <script>
+        var alertcopy = document.getElementById("alertcopy")
+        function copy() {
+
+            alertcopy.style.display = "block";
+
+            setTimeout(() => {
+                const box = document.getElementById('alertcopy').style.display = 'none';
+
+            }, 1500)
+        }
+    </script>
+</body>
+
+
+</html>
